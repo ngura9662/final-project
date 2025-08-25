@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <main>
+        <section>
+            <h2>Our Story</h2>
+            <p>Welcome to Blue Waves Hotel, where luxury meets the sea. Our hotel is located in the heart of the coastal paradise, offering breathtaking views and unparalleled service.</p>
+            <p>Founded in 2010, Blue Waves Hotel has been a beacon of comfort and elegance for travelers from around the world. Our commitment to excellence is reflected in every aspect of our hotel, from our beautifully appointed rooms to our world-class amenities.</p>
+            <p>Whether you're here for a romantic getaway, a family vacation, or a business trip, we promise to make your stay unforgettable.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Blue Waves Hotel, our mission is to provide our guests with an unforgettable experience. We strive to create a home away from home, where every detail is taken care of.</p>
+            <p>We are dedicated to sustainability and community engagement, ensuring that our operations benefit both our guests and the local environment. Our team is passionate about hospitality, and we are committed to exceeding your expectations at every turn.</p>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/4-1.jpg" alt="Zanzibar Beach" style="width:200px;height:auto;margin:10px;">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/1-1.jpg" alt="Stone Town Zanzibar" style="width:200px;height:auto;margin:10px;">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/2-4.jpg" alt="Zanzibar Sunset" style="width:200px;height:auto;margin:10px;">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/3.jpg" alt="Zanzibar Scenery" style="width:200px;height:auto;margin:10px;">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/6.jpg" alt="Zanzibar Beach" style="width:200px;height:auto;margin:10px;">
+                <img src="https://omarlocalguide.com/wp-content/uploads/2023/01/7.jpg" alt="Zanzibar Beach" style="width:200px;height:auto;margin:10px;">
+            </div>
+        </section>
+    </main>
+     <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Blue Waves Hotel</h3>
+                    <p>Experience luxury and comfort at our conveniently located hotel in beautiful Zanzibar.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> City Center, Stone Town, Zanzibar</p>
+                    <p><i class="fas fa-phone"></i> +255 777 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@bluewaveszanzibar.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +255 746 062 939</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Blue Waves Hotel Zanzibar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Fade in header on load
+    window.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('main-header').style.opacity = 1;
+        // Animate gallery images
+        const imgs = document.querySelectorAll('.gallery img');
+        imgs.forEach((img, i) => {
+            img.style.opacity = 0;
+            img.style.transform = 'translateY(40px)';
+            setTimeout(() => {
+                img.style.transition = 'opacity 1s, transform 1s';
+                img.style.opacity = 1;
+                img.style.transform = 'translateY(0)';
+            }, 300 + i * 200);
+        });
+    });
+    </script>
+</body>
+</html>
