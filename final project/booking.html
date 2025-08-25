@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Blue Waves Hotel Zanzibar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Blue <span>Waves</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="admin-toggle">Admin</a></li>
+                </ul>
+            </nav>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </div>
+    </header>
+    
+   <div class="booking-widget" id="booking">
+                <h3>Book Your Stay</h3>
+                <form class="booking-form" id="booking-form">
+                    <div class="form-group">
+                        <label for="check-in"  style="color: black;">Check-In</label>
+                        <input type="date" id="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out" style="color: black;">Check-Out</label>
+                        <input type="date" id="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adults" style="color: black;">Adults</label>
+                        <select id="adults" required>
+                            <option value="1">1 Adult</option>
+                            <option value="2" selected>2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="children" style="color: black;">Children</label>
+                        <select id="children">
+                            <option value="0" selected>No Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" style="color: black;">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color: black;">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" style="color: black;">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                     <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="family">Family Suite</option>
+                    </select>
+                </div>
+                    <button type="submit" class="search-btn">Complete Booking</button>
+                </form>
+            </div>
+            <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Blue Waves Hotel</h3>
+                    <p>Experience luxury and comfort at our conveniently located hotel in beautiful Zanzibar.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> City Center, Stone Town, Zanzibar</p>
+                    <p><i class="fas fa-phone"></i> +255 777 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@bluewaveszanzibar.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +255 746 062 939</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Blue Waves Hotel Zanzibar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

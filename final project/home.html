@@ -3,9 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blue Waves Hotel Zanzibar - Luxury City Retreat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <button>Click Me</button>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Blue <span>Waves</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="admin-toggle">Admin</a></li>
+                </ul>
+            </nav>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </div>
+    </header>
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Luxurious Accommodations</h2>
+                <p>Choose from our selection of exquisite rooms and suites</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Deluxe Room">
+                        <div class="room-badge">Most Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious room with modern amenities and a comfortable seating area.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 2 Guests</span>
+                            <span><i class="fas fa-expand"></i> 35m²</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$70 <small>/night</small></div>
+                            <a href="#booking" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Executive Suite">
+                        <div class="room-badge">Best Value</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Executive Suite</h3>
+                        <p>Separate living area with premium amenities and extra space.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 3 Guests</span>
+                            <span><i class="fas fa-expand"></i> 55m²</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$110 <small>/night</small></div>
+                            <a href="#booking" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Family Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3>Family Suite</h3>
+                        <p>Perfect for families with connecting rooms and child-friendly amenities.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 4 Guests</span>
+                            <span><i class="fas fa-expand"></i> 65m²</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$150 <small>/night</small></div>
+                            <a href="#booking" class="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--reastaurent section-->
+    <section id="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Restaurant</h2>
+                <p>Choose from our selection of delicious dishes</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Deluxe Room">
+                        <div class="room-badge">Most Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 2 People</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$15 <small>/dish</small></div>
+                            <a href="#booking" class="book-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Executive Suite">
+                        <div class="room-badge">Best Value</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp romaine lettuce, parmesan cheese, and croutons, tossed in Caesar dressing.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 3 People</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$10 <small>/dish</small></div>
+                            <a href="#booking" class="book-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Family Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>Creamy pasta with pancetta, egg, and parmesan cheese.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 4 People</span>
+                        </div>
+                        <div class="room-price">
+                            <div class="price">$15 <small>/dish</small></div>
+                            <a href="#booking" class="book-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" style="background-color: #f1f7fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Amenities</h2>
+                <p>Enjoy our premium facilities during your stay</p>
+            </div>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Swimming Pool</h3>
+                    <p>Relax and unwind in our sparkling outdoor pool</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>Savor local and international cuisine at our on-site restaurant</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa Services</h3>
+                    <p>Pamper yourself with our range of relaxing treatments</p>
+                </div>
+                
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free WiFi</h3>
+                    <p>Stay connected with high-speed internet throughout the hotel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Blue Waves Hotel</h3>
+                    <p>Experience luxury and comfort at our conveniently located hotel in beautiful Zanzibar.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> City Center, Stone Town, Zanzibar</p>
+                    <p><i class="fas fa-phone"></i> +255 777 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@bluewaveszanzibar.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +255 746 062 939</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Blue Waves Hotel Zanzibar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
