@@ -492,6 +492,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
+            
         }
         
         .map-container iframe {
