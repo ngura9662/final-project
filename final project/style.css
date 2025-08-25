@@ -688,7 +688,7 @@ footer {
             }
         }
         /* about */
-        
+
         body{
             text-align: center;
             font-family: 'Poppins', sans-serif;
@@ -696,7 +696,6 @@ footer {
             color: #222;
             margin: 0;
             padding: 0;
-            font-size: 200px;
         }
         .about-section {
             display: flex;
