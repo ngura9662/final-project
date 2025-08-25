@@ -6,16 +6,7 @@ body {
     color: #0a558c;
 }
 
-header {
-    background: #0a558c;
-    color: #fff;
-    padding: 40px 0 20px 0;
-    text-align: center;
-    letter-spacing: 2px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    opacity: 0;
-    transition: opacity 1.5s;
-}
+
 
 main {
     max-width: 900px;
@@ -722,10 +713,11 @@ footer {
         }
         .about-content p {
             margin-bottom: 1rem;
-            color:#f9f9f9;
+            color:#464040;
         }
         .about-content ul {
             list-style: disc inside;
             margin-bottom: 1rem;
             color: #f9f9f9;
         }
+
