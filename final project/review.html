@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Blue <span>Waves</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="admin-toggle">Admin</a></li>
+                </ul>
+            </nav>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </div>
+    </header>
+     <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Guest Reviews</h2>
+                <p>See what our guests have to say about their experience</p>
+            </div>
+            
+            <div class="reviews-container">
+                <div class="reviews-grid" id="reviews-grid">
+                    <!-- Reviews will be loaded dynamically -->
+                </div>
+                 <div class="review-form">
+                    <h3>Share Your Experience</h3>
+                    <form id="add-review">
+                        <div class="form-row">
+                            <input type="text" class="form-control" placeholder="Your Name" required id="review-name">
+                            <input type="email" class="form-control" placeholder="Your Email" required id="review-email">
+                        </div>
+                        <div class="form-group">
+                            <label>Your Rating</label>
+                            <div class="review-rating" id="review-stars">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <textarea class="form-control" placeholder="Your Review" required id="review-text"></textarea>
+                        <button type="submit" class="submit-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Blue Waves Hotel</h3>
+                    <p>Experience luxury and comfort at our conveniently located hotel in beautiful Zanzibar.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> City Center, Stone Town, Zanzibar</p>
+                    <p><i class="fas fa-phone"></i> +255 777 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@bluewaveszanzibar.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +255 746 062 939</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Blue Waves Hotel Zanzibar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+  
+</body>
+</html>
