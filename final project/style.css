@@ -538,6 +538,7 @@ footer {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
+            
         }
         
         .map-container iframe {
@@ -670,6 +671,7 @@ footer {
                 height: 50px;
                 font-size: 1.5rem;
             }
+<<<<<<< HEAD
         }
         /* about */
 
@@ -714,3 +716,8 @@ footer {
             color: #f9f9f9;
         }
 
+=======
+            
+        }
+        
+>>>>>>> 368b4b0f5ee43fddb0249c886be95ccfee3d6d5f
