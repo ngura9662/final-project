@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        main {
+            max-width: 500px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        #login-section label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        #login-section input[type="password"] {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 1px solid #bcd0e5;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        #login-section button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #login-section button:hover {
+            background: #0056b3;
+        }
+        #login-error {
+            color: #e74c3c;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        .hidden { display: none; }
+        .order-list {
+            margin-top: 1rem;
+        }
+        .order-item {
+            border: 1px solid #e0e7ef;
+            background: #f9fbfd;
+            border-radius: 7px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .order-item strong {
+            color: #007bff;
+        }
+        .confirm-btn {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 0.7rem;
+            transition: background 0.2s;
+        }
+        .confirm-btn:disabled,
+        .confirm-btn.confirmed {
+            background: #6c757d;
+            cursor: default;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem;
+            }
+            .order-item {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    <main>
+        <!-- Login Form -->
+        <section id="login-section">
+            <h2>Admin Login</h2>
+            <form id="login-form" autocomplete="off">
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" required placeholder="Enter admin password">
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-error">Incorrect password. Try again.</div>
+        </section>
+
+        <!-- Admin Orders Section -->
+        <section id="admin-section" class="hidden">
+            <h2>Review & Confirm Orders</h2>
+            <div class="order-list" id="order-list">
+                <!-- Example orders (replace with dynamic content as needed) -->
+                <div class="order-item">
+                    <p><strong>Order #1</strong></p>
+                    <p>Name: John Doe</p>
+                    <p>Room: Deluxe Suite</p>
+                    <button class="confirm-btn">Confirm</button>
+                </div>
+                <div class="order-item">
+                    <p><strong>Order #2</strong></p>
+                    <p>Name: Jane Smith</p>
+                    <p>Room: Standard Room</p>
+                    <button class="confirm-btn">Confirm</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Simple password for demonstration (change for production)
+        const ADMIN_PASSWORD = "admin123";
+
+        const loginForm = document.getElementById('login-form');
+        const loginSection = document.getElementById('login-section');
+        const adminSection = document.getElementById('admin-section');
+        const loginError = document.getElementById('login-error');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('admin-password').value;
+            if (password === ADMIN_PASSWORD) {
+                loginSection.classList.add('hidden');
+                adminSection.classList.remove('hidden');
+                loginError.style.display = 'none';
+            } else {
+                loginError.style.display = 'block';
+            }
+        });
+
+        // Confirm order button logic (delegated for dynamic content)
+        document.getElementById('order-list').addEventListener('click', function(e) {
+            if (e.target.classList.contains('confirm-btn') && !e.target.disabled) {
+                e.target.textContent = 'Confirmed';
+                e.target.disabled = true;
+                e.target.classList.add('confirmed');
+            }
+        });
+    </script>
+</body>
+</html>
+    
