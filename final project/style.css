@@ -5,9 +5,6 @@ body {
     padding: 0;
     color: #0a558c;
 }
-
-
-
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -228,23 +225,19 @@ footer {
             align-items: center;
             flex-wrap: wrap;
         }
-        
         .price-option {
             text-align: center;
             padding: 1rem;
         }
-        
         .price-option h4 {
             color: var(--primary);
             margin-bottom: 0.5rem;
         }
-        
         .price-amount {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--accent);
         }
-        
         .price-saving {
             color: #28a745;
             font-weight: 600;
